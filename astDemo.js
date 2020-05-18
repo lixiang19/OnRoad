@@ -1,0 +1,63 @@
+{ type: 1,
+  tag: 'prisoner-register',
+  attrsList:
+   [ { name: ':is-submit.sync', value: 'registerForm.isSubmit' },
+     { name: ':isShow.sync', value: 'registerForm.status' },
+     { name: ':regist-type.sync', value: 'registerForm.registType' },
+     { name: ':title', value: 'registerForm.title' },
+     { name: ':data', value: 'registerForm.formData' },
+     { name: ':is-show', value: 'registerForm.status' },
+     { name: '@refresh', value: 'refreshData' },
+     { name: ':type', value: 'registerForm.type' } ],
+  attrsMap:
+   { 'v-if': 'registerForm.status',
+     ':is-submit.sync': 'registerForm.isSubmit',
+     ':isShow.sync': 'registerForm.status',
+     ':regist-type.sync': 'registerForm.registType',
+     ':title': 'registerForm.title',
+     ':data': 'registerForm.formData',
+     ':is-show': 'registerForm.status',
+     '@refresh': 'refreshData',
+     ':type': 'registerForm.type' },
+  rawAttrsMap: {},
+  parent: undefined,
+  children: [],
+  if: 'registerForm.status',
+  ifConditions: [ { exp: 'registerForm.status', block: [Circular] } ],
+  plain: false,
+  hasBindings: true,
+  events:
+   { 'update:isSubmit':
+      { value: '$set(registerForm, "isSubmit", $event)',
+        dynamic: undefined },
+     'update:is-submit':
+      { value: '$set(registerForm, "isSubmit", $event)',
+        dynamic: undefined },
+     'update:isShow':
+      { value: '$set(registerForm, "status", $event)',
+        dynamic: undefined },
+     'update:is-show':
+      { value: '$set(registerForm, "status", $event)',
+        dynamic: undefined },
+     'update:registType':
+      { value: '$set(registerForm, "registType", $event)',
+        dynamic: undefined },
+     'update:regist-type':
+      { value: '$set(registerForm, "registType", $event)',
+        dynamic: undefined },
+     refresh: { value: 'refreshData', dynamic: false } },
+  attrs:
+   [ { name: 'is-submit',
+       value: 'registerForm.isSubmit',
+       dynamic: false },
+     { name: 'isShow', value: 'registerForm.status', dynamic: false },
+     { name: 'regist-type',
+       value: 'registerForm.registType',
+       dynamic: false },
+     { name: 'title', value: 'registerForm.title', dynamic: false },
+     { name: 'data', value: 'registerForm.formData', dynamic: false },
+     { name: 'is-show', value: 'registerForm.status', dynamic: false },
+     { name: 'type', value: 'registerForm.type', dynamic: false } ],
+  static: false,
+  staticRoot: false,
+  ifProcessed: true }
